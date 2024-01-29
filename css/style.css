@@ -1,0 +1,159 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+/* CSS Reset */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+#contenido {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    top: 60px;
+    padding: 5px;
+}
+
+#izquierda {
+    float: left;
+    width: 70%;
+    height: 80%;
+    display: block;
+}
+#izquierda #input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+#izquierda .informacion {
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#izquierda #botones {
+    display: block;
+    clear: both;
+    position: relative;
+}
+#izquierda #botones button {
+    width: 45%;
+    display: inline-block;
+    margin: 2%;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: 0px solid blue;
+    padding: 10px;
+}
+#izquierda #botones button:last-child {
+    width: 45%;
+    display: inline-block;
+    margin: 2%;
+    background-color: lightgray;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+#derecha {
+    float: right;
+    width: 30%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: gray 2px 2px 2px 2px;
+}
+#derecha #resultado {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#derecha #resultado img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+#derecha .informacion {
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#derecha #boton button {
+    width: 50%;
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media screen and (max-width:480px){
+    #izquierda, #derecha {
+        float: none;
+        width: 100%;
+    }
+
+    #derecha {
+        clear: both;
+        margin-top: 90px;
+        height: auto;
+    }
+    #derecha #resultado img {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
